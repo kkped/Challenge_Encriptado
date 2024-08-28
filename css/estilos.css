@@ -1,0 +1,83 @@
+/*------------------
+ FUENTES-----------*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+ /*---GLOBAL CSS ---*/
+
+ :root{
+    --Font: #e5e5e5;
+    --White: #FFFFFF;
+    --Greey: #c5c5c5c5;
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+    background: var(--White);
+ }
+
+ ::selection{
+    background: rgb(18, 82, 102);
+    color: var(--White);
+ }
+
+ body{
+    height: 100%;
+ }
+
+ img{
+    max-width: 100%;
+ }
+
+ /*
+ ENCABEZADO
+ */
+
+ header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+ }
+
+ header .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+ }
+
+ /* PRINCIPAL */
+
+ main{
+   display: flex;
+   flex-direction: row;
+   background: url(../imagenes/portada.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+ }
+
+ .encriptador{
+   width: 60%;
+   margin: 168px 0px 0px 140px;
+   background: transparent;
+ }
+
+ .encriptar{
+   width: 660px;
+   height: 288px;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 48px;
+   outline: none;
+   border: 1px solid var(--Greey);
+   border-radius: 15px;
+   resize: none;
+ }
+
+ .encriptar::placeholder, :focus{
+   color: rgb(15, 75, 65);
+ }
